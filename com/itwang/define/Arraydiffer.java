@@ -5,6 +5,8 @@ package com.itwang.define;
  */
 public class Arraydiffer {
     public static void main(String[] args) {
+        //方法一：
+
         //1.定义一个数组
         int[] arr = {11,22,33,44,55};
         //2.定义连个变量 i，j
@@ -24,6 +26,19 @@ public class Arraydiffer {
         for (int k = 0; k < arr.length; k++) {
             System.out.print(arr[k]+" ");
         }
-        System.out.print("}");
+        System.out.println("}");
+
+        //方法二
+        int[] arr1 = {22,44,66,77,88,99,100};
+        for (int m = 0,n = arr1.length-1; m < n; m++,n--) {
+            int temp = arr1[m];
+            arr1[m] = temp;
+            arr1[m] = arr1[n];
+            arr1[n] = temp;
+        }
+        for (int k = 0; k < arr1.length; k++) {
+            System.out.print(arr1[k]+" ");
+        }
     }
+
 }
