@@ -8,7 +8,7 @@ import java.util.Scanner;
  */
 public class Test3 {
     public static void main(String[] args) {
-        System.out.println("获取的平均分数为：" + getAvgScore(3));
+        System.out.println("获取的平均分数为：" + getAvgScore(4));
     }
     //num 评委个数
     public static double getAvgScore(int num){
