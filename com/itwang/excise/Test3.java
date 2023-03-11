@@ -11,7 +11,7 @@ public class Test3 {
         System.out.println("获取的平均分数为：" + getAvgScore(3));
     }
     //num 评委个数
-    public static int getAvgScore(int num){
+    public static double getAvgScore(int num){
         //1.定义一个数组容器
         int[] arr = new int[num];
         //2.键盘录入每个评委的分数
@@ -37,6 +37,6 @@ public class Test3 {
                 min = arr[i];
             }
         }
-        return (sum-max-min)/(num-2);
+        return 1.0*(sum-max-min)/(num-2);
     }
 }
