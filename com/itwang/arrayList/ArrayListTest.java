@@ -5,7 +5,7 @@ import java.util.ArrayList;
 /**
  * 删除购物车 带有枸杞字样的商品
  */
-public class arrayList {
+public class ArrayListTest {
     public static void main(String[] args) {
         ArrayList<String> productByCar = new ArrayList<>();
         productByCar.add("枸杞");
