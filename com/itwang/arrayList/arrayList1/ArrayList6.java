@@ -11,7 +11,8 @@ public class ArrayList6 {
         list.add(new User(1,"zhangsan","123456"));
         list.add(new User(2,"lisi","123456"));
         list.add(new User(3,"wangwu","123456"));
-        System.out.println(getUserById(4,list));
+        System.out.println(index(1,list));
+        
     }
     public static boolean getUserById(int id,ArrayList<User> users){
         for (int i = 0; i < users.size(); i++) {
@@ -20,5 +21,14 @@ public class ArrayList6 {
             }
         }
         return false;
+    }
+
+    public static int index(int id ,ArrayList<User> users){
+        for (int i = 0; i < users.size(); i++) {
+            if (users.get(i).getId() == id){
+                return i;
+            }
+        }
+        return -1;
     }
 }
