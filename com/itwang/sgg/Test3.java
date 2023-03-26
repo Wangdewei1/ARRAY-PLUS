@@ -11,12 +11,16 @@ public class Test3 {
         Scanner sc = new Scanner(System.in);
         loop: while (true) {
             System.out.println("-------------判断一个整数是奇数还是偶数--------------");
-            System.out.println("1.请输入要判断的数字：");
+            System.out.println("请选择您要操作的数字");
+            System.out.println("1.请输入要判断的数字");
             System.out.println("2.退出判断");
             int number = sc.nextInt();
             switch (number){
-                case 1 ->
-                        System.out.println(isIntNumber(number));
+                case 1 -> {
+                    System.out.println("请输入要判断的数字：");
+                    int num = sc.nextInt();
+                    System.out.println(isIntNumber(num));
+                }
                 case 2 -> {
                     System.out.println("已退出");
                     break loop;
