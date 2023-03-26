@@ -12,7 +12,7 @@ public class ArrayList6 {
         list.add(new User(2,"lisi","123456"));
         list.add(new User(3,"wangwu","123456"));
         System.out.println(index(1,list));
-        
+
     }
     public static boolean getUserById(int id,ArrayList<User> users){
         for (int i = 0; i < users.size(); i++) {
