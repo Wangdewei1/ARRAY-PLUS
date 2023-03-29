@@ -10,7 +10,7 @@ public class Demo {
 
     public static void printStar(int row){
         /**
-         *         *********   
+         *         *********
          *           *****
          *             *
          */
