@@ -22,5 +22,8 @@ public class OopExtendsTest {
         Dog.seeHome();
         Animal.eat();
         Animal.water();
+
+        BuOuMao buOuMao = new BuOuMao();
+        buOuMao.eat();
     }
 }
